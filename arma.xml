@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE squad SYSTEM "squad.dtd">
+<squad nick="PotatoSEC">
+    <name>PotatoSEC</name>
+    <email>N/A</email>
+    <web>N/A</web>
+    <picture>logo.paa</picture>
+    <title>N/A</title>
+    <member id="76561198038378136" nick="ThePotato">
+        <name>N/A</name>
+        <email>N/A</email>
+        <icq>N/A</icq>
+        <remark>N/A</remark>
+    </member>
+</squad>
