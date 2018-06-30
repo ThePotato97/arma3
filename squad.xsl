@@ -13,9 +13,9 @@
 		<TITLE><xsl:value-of select="/squad/name"/></TITLE>
 		<LINK REL="stylesheet" TYPE="text/css" HREF="squad.css"></LINK>
 	</HEAD>
-	<!--
+        <!--
 	XSL template for "squad.xml", used in "Armed Assault" (Ref: "http://www.armedassault.com")
-	and "Armed Assault 2" (Ref: "http://www.arma2.com")
+        and "Armed Assault 2" (Ref: "http://www.arma2.com")
 	See also the Arma-Wiki page: "http://community.bistudio.com/wiki/squad.xml"
 	Created by TomNedry, 26.Jan07
         Reviewed by TomNedry, 15.Jul09
@@ -23,7 +23,7 @@
 	To have a squad logo in the HTML output, just put a "sqd_logo.png" in the same folder...
 	-->
 	<BODY>
-	<!--Main TABLE -->                                                                             
+	<!--Main TABLE -->
 	<TABLE class="main">
 	<TR>
 	  <TD class="left_row" valign="top">
@@ -46,7 +46,17 @@
 			<TR height="100%">
 				<TD width="100%" height="100%" valign="top">
 					<DIV class="sqd_logo">
-					<img src="sqd_logo.png" alt="Picture: Squad Logo"/>
+			<TR height="100%">
+				<TD width="100%" height="100%" valign="top">
+					<DIV class="sqd_logo">
+						<img alt="Picture: Squad Logo">
+							<xsl:attribute name="src">
+								<xsl:value-of select="concat(substring-before(/squad/picture,'.paa'),'.png')"/>
+							</xsl:attribute>
+						</img>
+					</DIV>
+				</TD>
+			</TR>
 					</DIV>
 				</TD>
 			</TR>
